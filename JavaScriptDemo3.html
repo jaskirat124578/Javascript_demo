@@ -1,0 +1,48 @@
+<html>
+
+<head>
+
+<style>
+
+p
+{
+	font-size:20px;
+	color:red;
+}
+
+</style>
+
+<script>
+
+function Factorial()
+{
+
+		var num1 = parseInt(document.getElementById("n1").value);
+		var fact = 1;
+
+		for(i=1;i<=num1;i++)
+		fact = fact * i;
+
+		document.getElementById("msg").innerHTML = "Factoria is : " + fact;
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+
+		<br>Enter 1st number : <input type=text id=n1 />
+
+		<br><input type=button onClick=Factorial() value="Click here" />
+
+		<br>	<p id=msg></p>
+
+
+
+</body>
+
+
+</html>
